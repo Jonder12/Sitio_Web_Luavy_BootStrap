@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Potencia la imagen digital de tu clínica o empresa con LUAVY. Especialistas en manejo de redes sociales, branding y diseño gráfico en Occidente. ¡Ver portafolio!">
+    <meta name="keywords" content="redes sociales, diseño grafico, branding, luavy">
+    <meta name="author" content="Jonder Andrey Chacón Umaña, Tania Pamela Loria Carballo, Yoel Chaves Alvarado">
+    <link rel="icon" type="image/png" href="img/logo/logo_claro.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Luavy - Inicio</title>
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo/logo_grande_oscuro.png" alt="Logo de Luavy" width="100" height="50"></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú"><span></span><span></span><span></span></label>
+            <ul>                
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="pages/quienes_somos.html">¿Quiénes Somos?</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/portafolio.html">Portafolio</a></li>
+                <li><a href="pages/clientes.html">Clientes</a></li>
+                <li><a href="pages/preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <div class="contenidoBanner">
+                <div class="textoBanner">
+                    <!-- Eslogan -->
+                    <h1>Impulsamos tu negocio en redes sociales</h1>
+                    <h2>Creemos en tu sueño, por eso creamos contenido que conecta</h2>
+                </div>
+                <div class="imagenBanner">
+                    <img src="img/banner/banner.png" alt="Banner">
+                </div>
+            </div>
+            <div class="botonesBanner">
+                <button id="btnConocenos"><a href="pages/quienes_somos.html">Conócenos </a> </button>
+                <button id="btnPortafolio"><a href="pages/portafolio.html"> Ver Portafolio</a></button>
+            </div>
+        </section>
+        <!-- ¿Qué Hacemos? Resumen del trabajo y los servicios  -->
+        <section class="queHacemos">
+            <h2 class="aparecer">¿Qué hacemos?</h2>
+            <section class="descripcionQH aparecer">
+                <!--Icono -->
+                <img  class="iconoQH" src="img/iconos/servicios/ManejoRedesSociales.png" alt="Manejo de Redes Sociales">
+                <!-- Descripción del trabajo -->
+                <p>Planificamos, creamos, diseñamos, programamos y publicamos contenido para tu negocio</p>
+            </section>
+            <section class="descripcionQH aparecer">
+                <!--Icono -->
+                <img class="iconoQH" src="img/iconos/servicios/CreaciónContenido.png" alt="Creación de Contenido">
+                <!-- Descripción del trabajo -->                             
+                <p>Capturamos fotografías y videos auténticos que muestran la esencia de tu negocio</p>
+            </section>        
+            <section class="descripcionQH aparecer">
+                <!--Icono -->
+                <img class="iconoQH" src="img/iconos/servicios/IdentidadVisual.png" alt="Identidad Visual">
+                <!-- Descripción del trabajo -->
+                <p> Diseñamos publicaciones, logotipos y material gráfico que fortalecen la imagen profesional de tu marca.</p>
+            </section>
+            <section class="descripcionQH aparecer">
+                 <!--Icono -->
+                <img class="iconoQH" src="img/iconos/servicios/Edición.png" alt="Edición">
+                <!-- Descripción del trabajo -->
+                <p>Transformamos tu contenido en videos dinámicos, creativos y de alta calidad para publicarlos en redes sociales.</p>
+            </section>
+        </section>        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Derechos de autor: Luavy.</p>
+            <div class="redes">
+                <a href="https://www.facebook.com/share/1bbfkhf3eX/"><img src="img/iconos/redes/facebook.png" alt="Logo de Facebook" width="40" height="40"></a>
+                <a href="mailto:luavycr@gmail.com"><img src="img/iconos/redes/gmail.png" alt="Logo de Correo Electrónico" width="40" height="40"></a>
+                <a href="https://www.instagram.com/luavycr?igsh=MXdvM2ttZTNzbWc0"><img src="img/iconos/redes/instagram.png" alt="Logo de Instagram" width="40" height="40"></a>
+                <a href="https://wa.me/50671424874"><img src="img/iconos/redes/whatsapp.png" alt="Logo de WhatsApp" width="40" height="40"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const elementos = document.querySelectorAll('.aparecer');
+        const observador = new IntersectionObserver((entradas, observer) => {
+            entradas.forEach(entrada => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('mostrar');
+                    // Deja de observarlo para que no vuelva a animarse
+                    observer.unobserve(entrada.target);
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+        elementos.forEach(elemento => {
+            observador.observe(elemento);
+        });
+    </script>
+</body>
+</html>
