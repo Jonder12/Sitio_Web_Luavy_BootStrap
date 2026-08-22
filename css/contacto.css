@@ -1,0 +1,23 @@
+.info-contacto {
+    background-color: #faf6fb;
+    border: 1px solid #eadff5;
+    border-radius: var(--bs-border-radius);
+}
+
+.dato-contacto a {
+    color: #2b2b2b;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: .5rem .6rem;
+    transition: background-color .25s ease, transform .2s ease;
+}
+
+.dato-contacto a:hover {
+    background-color: var(--luavy-lila);
+    transform: translateX(4px);
+}
+
+.dato-contacto span {
+    font-weight: 500;
+    word-break: break-word;
+}

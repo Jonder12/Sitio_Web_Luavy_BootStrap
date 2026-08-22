@@ -8,93 +8,111 @@
     <meta name="author" content="Jonder Andrey Chacón Umaña, Tania Pamela Loria Carballo, Yoel Chaves Alvarado">
     <link rel="icon" type="image/png" href="../img/logo/logo_claro.png">
     <title>Luavy - Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../index.html"><img src="../img/logo/logo_grande_oscuro.png" alt="Logo de Luavy" width="100" height="50"></a>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú"><span></span><span></span><span></span></label>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="quienes_somos.html">¿Quiénes Somos?</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="clientes.html">Clientes</a></li>
-                <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html" class="activo">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-luavy sticky-top">
+            <div class="container-fluid px-3 px-lg-4">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo/logo_grande_oscuro.png" alt="Logo de Luavy" width="100" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLuavy" aria-controls="navLuavy" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navLuavy">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2 text-center">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quienes_somos.html">¿Quiénes Somos?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="pagina-contacto">
-        <h1>Cuéntanos sobre tu negocio</h1>
-        <div class="contenedor-contacto">
-            <section class="seccion-formulario">
-                <form action="#" method="post" class="form-contacto">
-                    <div class="campo flotante">
-                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Luis García Solis" required />
-                        <label for="nombre">Nombre</label>
-                    </div>
-                    <div class="campo flotante">
-                        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required />
-                        <label for="email">Correo electrónico</label>
-                    </div>
-                    <div class="campo flotante">
-                        <input type="tel" id="telefono" name="telefono" placeholder="+506 8888 0000" required />
-                        <label for="telefono">Teléfono</label>
-                    </div>
-                    <div class="campo flotante">
-                        <textarea id="dedicacion" name="dedicacion" placeholder="Ej. Clínica dental, tienda de ropa, restaurante..." required></textarea>
-                        <label for="dedicacion">¿A qué se dedica su negocio?</label>
-                    </div>
-                    <div class="campo flotante">
-                        <textarea id="inspiracion" name="inspiracion" placeholder="Ej. Cuéntenos referencias, estilos o perfiles que le gustaría reflejar" required></textarea>
-                        <label for="inspiracion">¿Inspiración de lo que aspira en su perfil?</label>
-                    </div>
-                    <div class="campo flotante">
-                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntenos un poco más sobre lo que busca"></textarea>
-                        <label for="mensaje">Mensaje</label>
-                    </div>
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </section>
-            <aside class="info-contacto">
-                <h3>Información de contacto</h3>
-                <div class="dato-contacto">
-                    <a href="https://wa.me/50671424874">
-                        <img src="../img/iconos/redes/whatsapp.png" alt="Logo de WhatsApp" width="40" height="40">
-                        <span>WhatsApp</span>
-                    </a>
+    <main class="pagina-contacto py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Cuéntanos sobre tu negocio</h1>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8">
+                    <section class="seccion-formulario card border-0 shadow-sm p-3 p-md-4">
+                        <form action="#" method="post" class="row g-3">
+                            <div class="col-12 form-floating">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Luis García Solis" required>
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            <div class="col-12 form-floating">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+                                <label for="email">Correo electrónico</label>
+                            </div>
+                            <div class="col-12 form-floating">
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+506 8888 0000" required>
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="col-12 form-floating">
+                                <textarea class="form-control" id="dedicacion" name="dedicacion" placeholder="Ej. Clínica dental, tienda de ropa, restaurante..." style="height: 100px" required></textarea>
+                                <label for="dedicacion">¿A qué se dedica su negocio?</label>
+                            </div>
+                            <div class="col-12 form-floating">
+                                <textarea class="form-control" id="inspiracion" name="inspiracion" placeholder="Ej. Cuéntenos referencias, estilos o perfiles que le gustaría reflejar" style="height: 100px" required></textarea>
+                                <label for="inspiracion">¿Inspiración de lo que aspira en su perfil?</label>
+                            </div>
+                            <div class="col-12 form-floating">
+                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Cuéntenos un poco más sobre lo que busca" style="height: 100px"></textarea>
+                                <label for="mensaje">Mensaje</label>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary px-4 py-2">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </section>
                 </div>
-                <div class="dato-contacto">
-                    <a href="https://www.instagram.com/luavycr?igsh=MXdvM2ttZTNzbWc0">
-                        <img src="../img/iconos/redes/instagram.png" alt="Logo de Instagram" width="40" height="40">
-                        <span>@luavycr</span>
-                    </a>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                    <aside class="info-contacto p-4">
+                        <h3 class="h5 mb-4">Información de contacto</h3>
+                        <div class="dato-contacto mb-2">
+                            <a href="https://wa.me/50671424874" class="d-flex align-items-center gap-3">
+                                <img src="../img/iconos/redes/whatsapp.png" alt="Logo de WhatsApp" width="40" height="40">
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                        <div class="dato-contacto mb-2">
+                            <a href="https://www.instagram.com/luavycr?igsh=MXdvM2ttZTNzbWc0" class="d-flex align-items-center gap-3">
+                                <img src="../img/iconos/redes/instagram.png" alt="Logo de Instagram" width="40" height="40">
+                                <span>@luavycr</span>
+                            </a>
+                        </div>
+                        <div class="dato-contacto mb-2">
+                            <a href="https://www.facebook.com/share/1bbfkhf3eX/" class="d-flex align-items-center gap-3">
+                                <img src="../img/iconos/redes/facebook.png" alt="Logo de Facebook" width="40" height="40">
+                                <span>Luavy</span>
+                            </a>
+                        </div>
+                        <div class="dato-contacto">
+                            <a href="mailto:luavycr@gmail.com" class="d-flex align-items-center gap-3">
+                                <img src="../img/iconos/redes/gmail.png" alt="Logo de Correo Electrónico" width="40" height="40">
+                                <span>luavycr@gmail.com</span>
+                            </a>
+                        </div>
+                    </aside>
                 </div>
-                <div class="dato-contacto">
-                    <a href="https://www.facebook.com/share/1bbfkhf3eX/">
-                        <img src="../img/iconos/redes/facebook.png" alt="Logo de Facebook" width="40" height="40">
-                        <span>Luavy</span>
-                    </a>
-                </div>
-                <div class="dato-contacto">
-                    <a href="mailto:luavycr@gmail.com">
-                        <img src="../img/iconos/redes/gmail.png" alt="Logo de Correo Electrónico" width="40" height="40">
-                        <span>luavycr@gmail.com</span>
-                    </a>
-                </div>
-            </aside>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <p>&copy; Derechos de autor: Luavy.</p>
-            <div class="redes">
+    <footer class="footer-luavy py-4 mt-5">
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">&copy; Derechos de autor: Luavy.</p>
+            <div class="d-flex gap-3">
                 <a href="https://www.facebook.com/share/1bbfkhf3eX/"><img src="../img/iconos/redes/facebook.png" alt="Logo de Facebook" width="40" height="40"></a>
                 <a href="mailto:luavycr@gmail.com"><img src="../img/iconos/redes/gmail.png" alt="Logo de Correo Electrónico" width="40" height="40"></a>
                 <a href="https://www.instagram.com/luavycr?igsh=MXdvM2ttZTNzbWc0"><img src="../img/iconos/redes/instagram.png" alt="Logo de Instagram" width="40" height="40"></a>
@@ -102,5 +120,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

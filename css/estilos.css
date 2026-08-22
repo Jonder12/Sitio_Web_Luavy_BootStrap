@@ -1,0 +1,201 @@
+/* =========================================================
+   FUENTES
+   Temporales mientras se reciben los archivos de las fuentes
+   oficiales de marca (The Seasons / Balgin). Cuando lleguen,
+   solo hay que cambiar las variables --luavy-fuente-titulos y
+   --luavy-fuente-texto de abajo.
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
+/* =========================================================
+   VARIABLES DE MARCA (paleta LUAVY refrescada)
+   ========================================================= */
+:root {
+    --luavy-morado: #241536;
+    --luavy-lavanda: #9880BD;
+    --luavy-rosa: #EDC8E4;
+    --luavy-lila: #DDD0F8;
+    --luavy-hueso: #E9E7F6;
+
+    --luavy-fuente-titulos: 'Playfair Display', serif;
+    --luavy-fuente-texto: 'Poppins', sans-serif;
+
+    /* Sobrescritura de variables de tema de Bootstrap 5.3 */
+    --bs-primary: var(--luavy-lavanda);
+    --bs-primary-rgb: 152, 128, 189;
+    --bs-body-font-family: var(--luavy-fuente-texto);
+    --bs-body-color: #2b2b2b;
+    --bs-link-color: var(--luavy-lavanda);
+    --bs-link-hover-color: var(--luavy-morado);
+    --bs-border-radius: 0.75rem;
+}
+
+/* =========================================================
+   FOOTER PEGADO AL FONDO (sticky footer con Flexbox)
+   ========================================================= */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--luavy-fuente-texto);
+}
+
+/* El <main> crece para ocupar todo el espacio sobrante,
+   empujando el footer hasta el fondo aunque haya poco contenido */
+main {
+    flex: 1 0 auto;
+}
+
+/* El footer no se encoge, mantiene su alto natural */
+footer.footer-luavy {
+    flex-shrink: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--luavy-fuente-titulos);
+    color: #49195e;
+}
+
+/* =========================================================
+   NAVBAR (Bootstrap navbar + clases propias de marca)
+   ========================================================= */
+.navbar-luavy {
+    background-color: var(--luavy-morado);
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.navbar-luavy .navbar-brand img {
+    height: 45px;
+    width: auto;
+    transition: transform .3s ease;
+}
+
+.navbar-luavy .navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.navbar-luavy .navbar-toggler {
+    border-color: var(--luavy-lavanda);
+}
+
+.navbar-luavy .nav-link {
+    color: var(--luavy-lavanda);
+    font-weight: 600;
+    border-radius: 6px;
+    padding: .5rem .9rem;
+    margin: 2px 0;
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+
+.navbar-luavy .nav-link:hover {
+    background-color: var(--luavy-lavanda);
+    color: var(--luavy-hueso);
+}
+
+.navbar-luavy .nav-link.active {
+    background-color: var(--luavy-lavanda);
+    color: var(--luavy-hueso);
+    text-decoration: underline;
+}
+
+/* A partir de escritorio: hover con borde en vez de fondo sólido */
+@media (min-width: 1024px) {
+    .navbar-luavy .nav-link {
+        border: 2px solid transparent;
+    }
+    .navbar-luavy .nav-link:hover {
+        background-color: transparent;
+        border-color: var(--luavy-lavanda);
+        color: var(--luavy-hueso);
+        text-decoration: underline;
+    }
+    .navbar-luavy .nav-link.active {
+        background-color: transparent;
+        color: var(--luavy-hueso);
+    }
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer.footer-luavy {
+    background-color: var(--luavy-morado);
+}
+
+footer.footer-luavy p {
+    color: var(--luavy-lila);
+    font-size: .9rem;
+}
+
+footer.footer-luavy img {
+    width: 32px;
+    height: 32px;
+    transition: transform .3s ease;
+}
+
+footer.footer-luavy img:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+    footer.footer-luavy img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* =========================================================
+   OVERRIDES EXPLÍCITOS DE COMPONENTES BOOTSTRAP
+   (estos componentes no heredan las variables de --bs-primary
+   automáticamente, así que se sobrescriben directo)
+   ========================================================= */
+.btn-primary {
+    background-color: var(--luavy-lavanda);
+    border-color: var(--luavy-lavanda);
+    font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--luavy-morado);
+    border-color: var(--luavy-morado);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--luavy-lila);
+    color: var(--luavy-morado);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: var(--luavy-lavanda);
+    box-shadow: 0 0 0 .25rem rgba(152, 128, 189, .25);
+}
+
+.accordion-button::after {
+    filter: hue-rotate(220deg) saturate(1.3);
+}
+
+.accordion-item {
+    border-color: #eadff5;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--luavy-lavanda);
+    box-shadow: 0 0 0 .25rem rgba(152, 128, 189, .25);
+}
+
+.form-floating > label {
+    color: #8a8a8a;
+}
+
+.card {
+    border-color: #eadff5;
+}
