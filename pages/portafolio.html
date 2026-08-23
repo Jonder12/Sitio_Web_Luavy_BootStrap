@@ -8,29 +8,26 @@
     <meta name="author" content="Jonder Andrey Chacón Umaña, Tania Pamela Loria Carballo, Yoel Chaves Alvarado">
     <link rel="icon" type="image/png" href="../img/logo/logo_claro.png">
     <title>Luavy - Portafolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/portafolio.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg" style="background-color: #241536;">
-            <div class="container-fluid px-4">
-                <!-- Logo -->
-                <a class="navbar-brand" href="../index.html"><img src="img/logo/logo_grande_oscuro.png" alt="Logo de Luavy" width="100"
-                        height="50"></a>
-                <!-- Botón Hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-toggle"
-                    aria-controls="menu-toggle" aria-expanded="false" aria-label="Abrir menú">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-luavy sticky-top">
+            <div class="container-fluid px-3 px-lg-4">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo/logo_grande_oscuro.png" alt="Logo de Luavy" width="100" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLuavy" aria-controls="navLuavy" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Menú -->
-                <div class="collapse navbar-collapse" id="menu-toggle">                    
-                    <ul class="navbar-nav ms-auto text-center">
+                <div class="collapse navbar-collapse" id="navLuavy">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2 text-center">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="quienes_somos.html">¿Quiénes Somos?</a></li>
                         <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="portafolio.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="portafolio.html">Portafolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
                         <li class="nav-item"><a class="nav-link" href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -39,143 +36,104 @@
             </div>
         </nav>
     </header>
-<main class="container py-4">
-    <h1 class="text-center mb-4">Nuestro trabajo habla por nosotros</h1>
-    <div class="row g-4">
-        <!-- Imagenes y Videos del trabajo de LUAVY  -->
-        <!-- Amaranto -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/amaranto/Amaranto 1.jpeg" alt="Amaranto">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/amaranto/Amaranto 2.png" alt="Amaranto">
-        </div>
-        <!-- Dra Nayeska -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125468?h=801e3f7f9a&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Grupo LDC Frío -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/grupo-ldc/Grupo LDC 1.png" alt="GRUPO LDCFRIO">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125451?h=bbd180108c&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/grupo-ldc/Grupo LDC 2.png" alt="GRUPO LDCFRIO" width="300">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125393?h=00c6162cde&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125425?h=66618da765&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Lilys Care -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/lilys-care/Lilys care 1.png" alt="Lilys Care">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/lilys-care/Lilys Care 2.png" alt="Lilys Care">
-        </div>
-        <!-- Kinesis -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125486?h=868e05d1b2&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125467?h=a030289813&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Nutrire -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/nutrire/Nutriré 1.png" alt="Nutriré">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/nutrire/Nutriré 2.png" alt="Nutriré">
-        </div>
-        <!-- Yen la Nutri -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125335?h=32729cc5e7&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Sala Kuarta -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125376?h=f8ab49f236&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Twin Glow -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/twin-glow/Twin Glow 1.png" alt="Twin Glow">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <img class="tarjeta" src="../img/portafolio/twin-glow/Twin Glow 2.png" alt="Twin Glow">
-        </div>
-        <!-- Distribuidora San Isidro -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125302?h=bf64da38db&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125301?h=0c800b9bbb&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Ares Equipment -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125303?h=a5ad4a0429&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Climb Wellness -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <iframe class="tarjeta" title="vimeo-player"
-                src="https://player.vimeo.com/video/1211125300?h=5ea892aee0&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1"
-                frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture;
-                clipboard-write; encrypted-media; web-share" allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</main>
 
-    <footer>
-        <div class="footer-container">
-            <p>&copy; Derechos de autor: Luavy.</p>
-            <div class="redes">
+    <main class="portafolio py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Nuestro trabajo habla por nosotros</h1>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/amaranto/Amaranto 1.jpeg" alt="Amaranto">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/amaranto/Amaranto 2.png" alt="Amaranto">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125468?h=801e3f7f9a&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/grupo-ldc/Grupo LDC 1.png" alt="GRUPO LDCFRIO">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125451?h=bbd180108c&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/grupo-ldc/Grupo LDC 2.png" alt="GRUPO LDCFRIO">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125393?h=00c6162cde&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125425?h=66618da765&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/lilys-care/Lilys care 1.png" alt="Lilys Care">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/lilys-care/Lilys Care 2.png" alt="Lilys Care">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125486?h=868e05d1b2&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125467?h=a030289813&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/nutrire/Nutriré 1.png" alt="Nutriré">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/nutrire/Nutriré 2.png" alt="Nutriré">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125335?h=32729cc5e7&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125376?h=f8ab49f236&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/twin-glow/Twin Glow 1.png" alt="Twin Glow">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="tarjeta-portafolio" src="../img/portafolio/twin-glow/Twin Glow 2.png" alt="Twin Glow">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125302?h=bf64da38db&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125301?h=0c800b9bbb&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125303?h=a5ad4a0429&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="tarjeta-portafolio" title="vimeo-player" src="https://player.vimeo.com/video/1211125300?h=5ea892aee0&title=0&byline=0&portrait=0&pip=0&dnt=1&loop=1" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-luavy py-4 mt-5">
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">&copy; Derechos de autor: Luavy.</p>
+            <div class="d-flex gap-3">
                 <a href="https://www.facebook.com/share/1bbfkhf3eX/"><img src="../img/iconos/redes/facebook.png" alt="Logo de Facebook" width="40" height="40"></a>
                 <a href="mailto:luavycr@gmail.com"><img src="../img/iconos/redes/gmail.png" alt="Logo de Correo Electrónico" width="40" height="40"></a>
                 <a href="https://www.instagram.com/luavycr?igsh=MXdvM2ttZTNzbWc0"><img src="../img/iconos/redes/instagram.png" alt="Logo de Instagram" width="40" height="40"></a>
@@ -184,6 +142,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

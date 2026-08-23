@@ -1,0 +1,153 @@
+#banner {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.imagenBanner img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+.textoBanner {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-family: "Chewy", cursive;
+    font-size: 40px;
+    color: var(--luavy-morado) !important;
+}
+
+.subtitulo {
+    font-family: "DynaPuff", cursive;
+    font-size: 30px;
+    color: var(--luavy-lavanda) !important;
+}
+
+.botonesBanner .btn {
+    border-radius: 20px;
+    font-family: "DynaPuff", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: .6rem 1.6rem;
+
+    transition:
+        transform .2s ease,
+        background-color .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+}
+
+.botonesBanner .btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-luavy {
+    background-color: var(--luavy-lavanda) !important;
+    border: 2px solid var(--luavy-lavanda) !important;
+    color: white !important;
+}
+
+.btn-luavy:hover {
+    background-color: var(--luavy-morado) !important;
+    border-color: var(--luavy-morado) !important;
+    color: white !important;
+}
+
+.btn-luavy-outline {
+    background-color: white;
+    border: 2px solid var(--luavy-lavanda) !important; 
+    color: var(--luavy-lavanda) !important;
+}
+
+.btn-luavy-outline:hover {
+    background-color: var(--luavy-hueso) !important;
+    border-color: var(--luavy-lavanda)!important;
+    color: var(--luavy-morado) !important;
+}
+
+.queHacemos {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.titulo-seccion {
+    font-family: "Bitter", serif;
+    font-size: 30px;
+    color: var(--luavy-morado) !important;
+}
+
+.descripcionQH {
+    width: 270px;
+    height: 325px;
+
+    border: 2px solid var(--luavy-lavanda) !important;
+    border-radius: 24px;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+    background-color: var(--luavy-hueso) !important;
+
+    transition: transform 0.3s ease;
+}
+
+.descripcionQH:hover {
+    transform: scale(1.04);
+}
+
+.iconoQH {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.descripcionQH p {
+    margin: 0;
+
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    color: var(--bs-body-color);
+}
+
+.aparecer {
+    opacity: 0;
+    transform: translateY(180px);
+}
+
+.aparecer.mostrar {
+    animation: aparecer 0.8s ease-out forwards;
+}
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(180px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.columnaQH:nth-child(1) .descripcionQH {
+    animation-delay: 0s;
+}
+
+.columnaQH:nth-child(2) .descripcionQH {
+    animation-delay: 0.2s;
+}
+
+.columnaQH:nth-child(3) .descripcionQH {
+    animation-delay: 0.4s;
+}
+
+.columnaQH:nth-child(4) .descripcionQH {
+    animation-delay: 0.6s;
+}
