@@ -1,0 +1,42 @@
+.nosotros {
+    border: 2px solid var(--luavy-lavanda);
+    border-radius: 24px;
+    padding: 24px 16px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform .3s ease, box-shadow .3s ease;
+    height: 100%;
+}
+
+.nosotros:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(152, 128, 189, .3);
+}
+
+.nosotros h2 {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--luavy-lavanda);
+}
+
+.nosotros p {
+    text-align: left;
+}
+
+.btnvermas {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--luavy-lavanda);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btnvermas:hover {
+    color: var(--luavy-morado);
+}
+
+.quesomos img {
+    max-width: 240px;
+}

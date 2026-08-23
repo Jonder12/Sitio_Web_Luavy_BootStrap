@@ -7,130 +7,146 @@
     <meta name="keywords" content="redes sociales, diseño grafico, branding, luavy">
     <meta name="author" content="Jonder Andrey Chacón Umaña, Tania Pamela Loria Carballo, Yoel Chaves Alvarado">
     <link rel="icon" type="image/png" href="../img/logo/logo_claro.png">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/quienes_somos_estilos.css">
     <title>Luavy - Quiénes somos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/quienes_somos.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../index.html"><img src="../img/logo/logo_grande_oscuro.png" alt="Logo de Luavy" width="100" height="50"></a>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú"><span></span><span></span><span></span></label>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="quienes_somos.html" class="activo">¿Quiénes Somos?</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="clientes.html">Clientes</a></li>
-                <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-luavy sticky-top">
+            <div class="container-fluid px-3 px-lg-4">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo/logo_grande_oscuro.png" alt="Logo de Luavy" width="100" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLuavy" aria-controls="navLuavy" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navLuavy">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2 text-center">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="quienes_somos.html">¿Quiénes Somos?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <div class="quesomos">
-            <div class="qtexto">
-                 <h1>Conoce más sobre nosotros</h1>
-            <p>
-                Somos una agencia creativa especializada en manejo de redes sociales, creación de contenido y branding. Ayudamos a empresas 
-                a fortalecer su presencia digital mediante contenido visual profesional, creativo y alineado con la identidad de cada marca.
-            </p>
+    <main class="py-5">
+        <div class="container">
+            <div class="quesomos row align-items-center gy-4 mb-5">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="text-lg-start">Conoce más sobre nosotros</h1>
+                    <p>
+                        Somos una agencia creativa especializada en manejo de redes sociales, creación de contenido y branding. Ayudamos a empresas
+                        a fortalecer su presencia digital mediante contenido visual profesional, creativo y alineado con la identidad de cada marca.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="../img/iconos/iconnos_quienessomos/sobre-nosotros.png" alt="IMG Sobre nosotros" width="240" height="240">
+                </div>
             </div>
-            <img src="../img/iconos/iconnos_quienessomos/sobre-nosotros.png" alt="IMG Sobre nosotros" width="240" height="240">
-        </div>
-        <section id="contenedor">
-        
 
-        <div class="nav_grid">
-        <div class="nosotros historia">
-          <img src="../img/iconos/iconnos_quienessomos/libro-de-lectura.png" alt="IMG Historia" width="40" height="40">
-          <h2>Historia</h2>
-          <p><strong>¿Cuándo se fundó?</strong><br>
-          LUAVY nació en agosto de 2024.</p>
-          
-          <p><strong>¿Quién la fundó?</strong><br>
-          Fue fundada por las hermanas Daniela Esquivel y Valeria Esquivel, quienes decidieron convertir su pasión por el diseño y la creatividad en un emprendimiento familiar.</p>
-          
-          <details>
-        <summary class="btnvermas">Ver más</summary>
-          <div id="contenido_oculto">
-          <p><strong>¿Cómo empezó?</strong><br>
-          Luavy comenzó como un emprendimiento familiar desde casa, aprovechando la experiencia que ya teníamos en diseño gráfico y manejo de redes sociales. 
-          Aunque éramos muy jóvenes —Daniela con 19 años y Valeria con 22— siempre compartimos el deseo de emprender y construir un proyecto propio que nos permitiera crecer profesionalmente haciendo lo que más nos apasiona: crear.
-          </p>
-          
-          <p>
-          <strong>Principales retos</strong><br>
-          Como ocurre con la mayoría de los emprendimientos, los primeros meses estuvieron llenos de desafíos. Uno de los mayores retos fue invertir en el 
-          equipo necesario para ofrecer un servicio de calidad, al mismo tiempo que buscábamos clientes que confiaran en nuestro trabajo cuando aún no contábamos con un portafolio amplio que respaldara nuestra experiencia.<br><br>
-          Poco a poco entendimos que no era necesario tener absolutamente todo para comenzar; lo verdaderamente importante era dar el primer paso, trabajar 
-          con excelencia y permitir que cada proyecto hablara por nosotros.<br><br>
-          Con el tiempo, nuestros propios clientes comenzaron a recomendarnos, y esa confianza se convirtió en la mejor herramienta para seguir creciendo.
-        </p>
-          
-          <p>
-          <strong>¿Cómo ha evolucionado?</strong><br>
-          Desde el primer mes conseguimos nuestros primeros clientes, varios de los cuales continúan trabajando con nosotros hasta el día de hoy. 
-          En temporadas de mayor demanda contamos con colaboradores que nos apoyan en áreas como community management y edición de video, permitiéndonos mantener la calidad de cada proyecto.
-        </p>
-          
-          <p>
-          <strong>¿Cómo surgió la idea?</strong><br>
-          Todo comenzó cuando Daniela empezó a recibir solicitudes como diseñadora gráfica independiente. Con el tiempo, identificamos una necesidad muy 
-          clara en los negocios de nuestra comunidad: muchas empresas ya estaban bien posicionadas y ofrecían excelentes productos o servicios, pero no contaban con el tiempo ni con el conocimiento necesario para mantener una presencia profesional en redes sociales.<br><br>
-          Fue entonces cuando decidimos crear un servicio que se encargara absolutamente de todo el proceso: desde la planificación de ideas, la grabación 
-          de contenido, la edición de videos y diseños, hasta la programación y publicación en redes sociales. Así nació Luavy.
-          </p>
-          
-          <p>
-          <strong>¿Qué necesidad buscábamos satisfacer?</strong><br>
-          Queríamos ayudar a los empresarios a recuperar su tiempo, haciéndonos cargo de todo el proceso creativo: estrategia, planificación, grabación, 
-          diseño, edición, programación y publicación del contenido.<br><br>
-          Al mismo tiempo, buscábamos construir un trabajo que disfrutáramos, con la flexibilidad de trabajar desde casa y desarrollar un proyecto propio.
-          </p>
-          
-          <p>
-          <strong>¿Qué problema resolvemos?</strong><br>
-          Ayudamos a que los negocios proyecten en redes sociales la misma calidad y profesionalismo que ofrecen en sus establecimientos físicos, 
-          además de liberar a los emprendedores de la carga que implica administrar constantemente sus redes sociales.
-          </p>
-          </div>
-          
-          </details>
-        </div>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="nosotros">
+                        <img src="../img/iconos/iconnos_quienessomos/libro-de-lectura.png" alt="IMG Historia" width="40" height="40">
+                        <h2>Historia</h2>
+                        <p><strong>¿Cuándo se fundó?</strong><br>
+                        LUAVY nació en agosto de 2024.</p>
 
-        <div class="nosotros">
-          <img src="../img/iconos/iconnos_quienessomos/objetivo.png" alt="IMG Mision" width="40" height="40">
-          <h2>Misión</h2>
-          <p>Impulsar el crecimiento de negocios y emprendimientos mediante estrategias de contenido creativo, diseño gráfico y manejo profesional de redes sociales, ofreciendo un servicio integral que permita a nuestros clientes ahorrar tiempo, fortalecer su imagen de marca y conectar de forma auténtica con su audiencia.</p>
-        </div>
+                        <p><strong>¿Quién la fundó?</strong><br>
+                        Fue fundada por las hermanas Daniela Esquivel y Valeria Esquivel, quienes decidieron convertir su pasión por el diseño y la creatividad en un emprendimiento familiar.</p>
 
-        <div class="nosotros">
-          <img src="../img/iconos/iconnos_quienessomos/vision.png" alt="IMG Vision" width="40" height="40">
-          <h2>Visión</h2>
-          <p>Ser una agencia creativa reconocida por la calidad de nuestro trabajo, la cercanía con nuestros clientes y la capacidad de transformar la presencia digital de cada marca mediante estrategias innovadoras, humanas y con propósito.</p>
-        </div>
+                        <details>
+                            <summary class="btnvermas">Ver más</summary>
+                            <div id="contenido_oculto">
+                                <p><strong>¿Cómo empezó?</strong><br>
+                                Luavy comenzó como un emprendimiento familiar desde casa, aprovechando la experiencia que ya teníamos en diseño gráfico y manejo de redes sociales.
+                                Aunque éramos muy jóvenes —Daniela con 19 años y Valeria con 22— siempre compartimos el deseo de emprender y construir un proyecto propio que nos permitiera crecer profesionalmente haciendo lo que más nos apasiona: crear.
+                                </p>
 
-        <div class="nosotros">
-          <img src="../img/iconos/iconnos_quienessomos/propuesta-de-valor.png" alt="IMG Valores" width="40" height="40">
-          <h2>Valores</h2>
-          <p><strong>Compromiso:</strong> Trabajamos cada proyecto como si fuera nuestro.</p>
-          <p><strong>Creatividad:</strong> Buscamos ideas que hagan destacar a cada marca.</p>
-          <p><strong>Cercanía:</strong> Construimos relaciones de confianza con nuestros clientes.</p>
-          <p><strong>Calidad:</strong> Cuidamos cada detalle de nuestro trabajo.</p>
-          <p><strong>Innovación:</strong> Nos mantenemos en constante aprendizaje.</p>
-          <p><strong>Autenticidad:</strong> Creamos contenido real que conecte con las personas.</p>
+                                <p>
+                                <strong>Principales retos</strong><br>
+                                Como ocurre con la mayoría de los emprendimientos, los primeros meses estuvieron llenos de desafíos. Uno de los mayores retos fue invertir en el
+                                equipo necesario para ofrecer un servicio de calidad, al mismo tiempo que buscábamos clientes que confiaran en nuestro trabajo cuando aún no contábamos con un portafolio amplio que respaldara nuestra experiencia.<br><br>
+                                Poco a poco entendimos que no era necesario tener absolutamente todo para comenzar; lo verdaderamente importante era dar el primer paso, trabajar
+                                con excelencia y permitir que cada proyecto hablara por nosotros.<br><br>
+                                Con el tiempo, nuestros propios clientes comenzaron a recomendarnos, y esa confianza se convirtió en la mejor herramienta para seguir creciendo.
+                                </p>
+
+                                <p>
+                                <strong>¿Cómo ha evolucionado?</strong><br>
+                                Desde el primer mes conseguimos nuestros primeros clientes, varios de los cuales continúan trabajando con nosotros hasta el día de hoy.
+                                En temporadas de mayor demanda contamos con colaboradores que nos apoyan en áreas como community management y edición de video, permitiéndonos mantener la calidad de cada proyecto.
+                                </p>
+
+                                <p>
+                                <strong>¿Cómo surgió la idea?</strong><br>
+                                Todo comenzó cuando Daniela empezó a recibir solicitudes como diseñadora gráfica independiente. Con el tiempo, identificamos una necesidad muy
+                                clara en los negocios de nuestra comunidad: muchas empresas ya estaban bien posicionadas y ofrecían excelentes productos o servicios, pero no contaban con el tiempo ni con el conocimiento necesario para mantener una presencia profesional en redes sociales.<br><br>
+                                Fue entonces cuando decidimos crear un servicio que se encargara absolutamente de todo el proceso: desde la planificación de ideas, la grabación
+                                de contenido, la edición de videos y diseños, hasta la programación y publicación en redes sociales. Así nació Luavy.
+                                </p>
+
+                                <p>
+                                <strong>¿Qué necesidad buscábamos satisfacer?</strong><br>
+                                Queríamos ayudar a los empresarios a recuperar su tiempo, haciéndonos cargo de todo el proceso creativo: estrategia, planificación, grabación,
+                                diseño, edición, programación y publicación del contenido.<br><br>
+                                Al mismo tiempo, buscábamos construir un trabajo que disfrutáramos, con la flexibilidad de trabajar desde casa y desarrollar un proyecto propio.
+                                </p>
+
+                                <p>
+                                <strong>¿Qué problema resolvemos?</strong><br>
+                                Ayudamos a que los negocios proyecten en redes sociales la misma calidad y profesionalismo que ofrecen en sus establecimientos físicos,
+                                además de liberar a los emprendedores de la carga que implica administrar constantemente sus redes sociales.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="nosotros">
+                        <img src="../img/iconos/iconnos_quienessomos/objetivo.png" alt="IMG Mision" width="40" height="40">
+                        <h2>Misión</h2>
+                        <p>Impulsar el crecimiento de negocios y emprendimientos mediante estrategias de contenido creativo, diseño gráfico y manejo profesional de redes sociales, ofreciendo un servicio integral que permita a nuestros clientes ahorrar tiempo, fortalecer su imagen de marca y conectar de forma auténtica con su audiencia.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="nosotros">
+                        <img src="../img/iconos/iconnos_quienessomos/vision.png" alt="IMG Vision" width="40" height="40">
+                        <h2>Visión</h2>
+                        <p>Ser una agencia creativa reconocida por la calidad de nuestro trabajo, la cercanía con nuestros clientes y la capacidad de transformar la presencia digital de cada marca mediante estrategias innovadoras, humanas y con propósito.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="nosotros">
+                        <img src="../img/iconos/iconnos_quienessomos/propuesta-de-valor.png" alt="IMG Valores" width="40" height="40">
+                        <h2>Valores</h2>
+                        <p><strong>Compromiso:</strong> Trabajamos cada proyecto como si fuera nuestro.</p>
+                        <p><strong>Creatividad:</strong> Buscamos ideas que hagan destacar a cada marca.</p>
+                        <p><strong>Cercanía:</strong> Construimos relaciones de confianza con nuestros clientes.</p>
+                        <p><strong>Calidad:</strong> Cuidamos cada detalle de nuestro trabajo.</p>
+                        <p><strong>Innovación:</strong> Nos mantenemos en constante aprendizaje.</p>
+                        <p><strong>Autenticidad:</strong> Creamos contenido real que conecte con las personas.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <p>&copy; Derechos de autor: Luavy.</p>
-            <div class="redes">
+    <footer class="footer-luavy py-4 mt-5">
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">&copy; Derechos de autor: Luavy.</p>
+            <div class="d-flex gap-3">
                 <a href="https://www.facebook.com/share/1bbfkhf3eX/"><img src="../img/iconos/redes/facebook.png" alt="Logo de Facebook" width="40" height="40"></a>
                 <a href="mailto:luavycr@gmail.com"><img src="../img/iconos/redes/gmail.png" alt="Logo de Correo Electrónico" width="40" height="40"></a>
                 <a href="https://www.instagram.com/luavycr?igsh=MXdvM2ttZTNzbWc0"><img src="../img/iconos/redes/instagram.png" alt="Logo de Instagram" width="40" height="40"></a>
@@ -138,5 +154,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
